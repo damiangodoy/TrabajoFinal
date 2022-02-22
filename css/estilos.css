@@ -39,6 +39,32 @@ footer ul img {
     margin: 5px;
 } 
 
+.slide-right {
+	-webkit-animation: slide-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+
 .imagen-inicio {
     height: 80vh;
     object-fit: cover;
@@ -48,10 +74,30 @@ h2 {
     font-size: 3rem;
     font-weight: bold;
     color: orangered;
-    text-align: center
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: aparece-imagen;
 }
 
 p {
     text-align: center;
     color: grey ;
+    font-size: 12px;
+    animation-duration: 5s;
+    animation-name: aparece-imagen;
 }
+
+.imagen-nosotros {
+    border-radius: 8px;
+    height: 80vh;
+    object-fit: cover;
+    animation-duration: 5s;
+    animation-name: aparece-imagen;
+}
+@keyframes aparece-imagen {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
