@@ -78,6 +78,14 @@ h2 {
     animation-duration: 5s;
     animation-name: aparece-imagen;
 }
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: orangered;
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: aparece-imagen;
+}
 
 p {
     text-align: center;
@@ -88,6 +96,13 @@ p {
 }
 
 .imagen-nosotros {
+    border-radius: 8px;
+    height: 80vh;
+    object-fit: cover;
+    animation-duration: 5s;
+    animation-name: aparece-imagen;
+}
+.imagen-staff {
     border-radius: 8px;
     height: 80vh;
     object-fit: cover;
