@@ -21,41 +21,36 @@ header {
       flex-wrap: wrap;
 }
 
-.texto-nav {
-  color: #F15A24;
-  font-weight: bold;
-}
-
-.logo-header {
+header .logo-header {
   height: 100px;
   overflow: hidden;
   margin: 5px;
 }
 
+header .boton-header {
+  margin: 15px;
+  background-color: black;
+}
+
+header .boton-header .btn {
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* Footer */
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-footer div {
-  margin: 5px;
-}
-
 footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer ul img {
@@ -92,7 +87,7 @@ footer ul img {
 }
 
 .imagen-inicio {
-  height: 80vh;
+  height: 85vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -146,6 +141,22 @@ footer ul img {
   }
 }
 
+.boton, header .boton-header, .boton-enviar, .boton-borrar {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+}
+
+.boton-enviar {
+  background-color: #F15A24;
+}
+
+.boton-borrar {
+  background-color: gray;
+}
+
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
@@ -164,6 +175,17 @@ h3 {
   font-weight: bold;
   color: #F15A24;
   text-align: center;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: aparece-imagen;
+          animation-name: aparece-imagen;
+}
+
+h4 {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #F15A24;
+  font-weight: bold;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-name: aparece-imagen;

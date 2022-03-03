@@ -1,0 +1,16 @@
+.boton {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+
+}
+.boton-enviar {
+    @extend .boton;
+    background-color: $naranjalogo;
+}
+.boton-borrar {
+    @extend .boton;
+    background-color: gray;
+}
