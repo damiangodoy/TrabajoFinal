@@ -157,6 +157,10 @@ footer ul img {
   background-color: gray;
 }
 
+.form-control {
+  width: 90%;
+}
+
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
