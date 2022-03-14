@@ -1,4 +1,11 @@
 .imagen-inicio {
     height: 85vh;
     object-fit: cover;
+    position: relative;
+}
+.titulo-inicio {
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }

@@ -28,8 +28,8 @@ header .logo-header {
 }
 
 header .boton-header {
-  margin: 15px;
   background-color: black;
+  margin-right: 15px;
 }
 
 header .boton-header .btn {
@@ -37,6 +37,7 @@ header .boton-header .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 /* Footer */
@@ -90,6 +91,16 @@ footer ul img {
   height: 85vh;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
+}
+
+.titulo-inicio {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
 
 .imagen-nosotros {
@@ -121,6 +132,21 @@ footer ul img {
   }
 }
 
+.imagen-actividades {
+  height: 80vh;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: aparece-imagen;
+          animation-name: aparece-imagen;
+}
+
+.card-actividades {
+  border: none;
+}
+
 .imagen-staff {
   border-radius: 8px;
   height: 80vh;
@@ -147,6 +173,7 @@ footer ul img {
   border-radius: 20px;
   color: white;
   border: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .boton-enviar {
@@ -158,7 +185,19 @@ footer ul img {
 }
 
 .form-control {
-  width: 90%;
+  width: 80%;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #F15A24;
+  text-align: center;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: aparece-imagen;
+          animation-name: aparece-imagen;
 }
 
 h2 {
@@ -175,7 +214,7 @@ h2 {
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 1,5rem;
   font-weight: bold;
   color: #F15A24;
   text-align: center;
@@ -186,7 +225,7 @@ h3 {
 }
 
 h4 {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #F15A24;
   font-weight: bold;

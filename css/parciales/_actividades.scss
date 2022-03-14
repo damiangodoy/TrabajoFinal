@@ -1,0 +1,10 @@
+.imagen-actividades {
+    height: 80vh;
+    border-radius: 10px;
+    object-fit: cover;
+    animation-duration: 5s;
+    animation-name: aparece-imagen;
+}
+.card-actividades {
+    border: none;
+}

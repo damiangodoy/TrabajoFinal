@@ -1,5 +1,14 @@
+h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 5rem;
+    font-weight: bold;
+    color: $naranjalogo;
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: aparece-imagen;
+}
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
     font-size: 3rem;
     font-weight: bold;
     color: $naranjalogo;
@@ -9,19 +18,21 @@ h2 {
 }
 h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1,5rem;
     font-weight: bold;
     color: $naranjalogo;
     text-align: center;
     animation-duration: 5s;
     animation-name: aparece-imagen;
 }
-h4 {font-family: sans-serif;
+h4 {
+    font-family: 'Montserrat', sans-serif;
     font-size:1rem;
     color: $naranjalogo;
     font-weight: bold;
     animation-duration: 5s;
     animation-name: aparece-imagen;
+    
 }
 
 p {
