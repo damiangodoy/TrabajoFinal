@@ -8,3 +8,12 @@
 .card-actividades {
     border: none;
 }
+.texto-actividades {
+    text-align: justify;
+}
+@media screen and (max-width: 768px) {
+     .imagen-actividades {
+         object-fit: center;
+         height: 40vh;
+     }
+}

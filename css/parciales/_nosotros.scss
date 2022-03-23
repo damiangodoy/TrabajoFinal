@@ -5,6 +5,9 @@
     animation-duration: 5s;
     animation-name: aparece-imagen;
 }
+.texto-nosotros {
+    text-align: justify;
+}
 @keyframes aparece-imagen {
     0% {
         opacity: 0;

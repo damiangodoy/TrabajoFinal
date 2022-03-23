@@ -103,6 +103,18 @@ footer ul img {
   left: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .titulo-inicio {
+    font-size: 3rem;
+    left: 25px;
+  }
+  .imagen-inicio {
+    -o-object-fit: center;
+       object-fit: center;
+    height: 70vh;
+  }
+}
+
 .imagen-nosotros {
   border-radius: 8px;
   height: 80vh;
@@ -112,6 +124,10 @@ footer ul img {
           animation-duration: 5s;
   -webkit-animation-name: aparece-imagen;
           animation-name: aparece-imagen;
+}
+
+.texto-nosotros {
+  text-align: justify;
 }
 
 @-webkit-keyframes aparece-imagen {
@@ -147,6 +163,18 @@ footer ul img {
   border: none;
 }
 
+.texto-actividades {
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .imagen-actividades {
+    -o-object-fit: center;
+       object-fit: center;
+    height: 40vh;
+  }
+}
+
 .imagen-staff {
   border-radius: 8px;
   height: 80vh;
@@ -164,6 +192,14 @@ footer ul img {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imagen-staff {
+    -o-object-position: center;
+       object-position: center;
+    height: 60vh;
   }
 }
 
