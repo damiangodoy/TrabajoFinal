@@ -1,0 +1,21 @@
+.boton {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.boton-enviar {
+    @extend .boton;
+    background-color: $naranjalogo;
+}
+.boton-borrar {
+    @extend .boton;
+    background-color: gray;
+}
+
+.form-control {
+    width: 80%;
+}

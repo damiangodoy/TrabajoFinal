@@ -1,0 +1,22 @@
+.imagen-staff {
+    border-radius: 8px;
+    height: 80vh;
+    object-fit: cover;
+    animation-duration: 5s;
+    animation-name: aparece-imagen;
+}
+
+@keyframes aparece-imagen {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 768px) {
+     .imagen-staff {
+         object-position: center;
+         height: 60vh;
+     }
+}

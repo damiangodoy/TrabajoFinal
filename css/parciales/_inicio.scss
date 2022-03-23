@@ -1,0 +1,22 @@
+.imagen-inicio {
+    height: 85vh;
+    object-fit: cover;
+    position: relative;
+}
+.titulo-inicio {
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo-inicio {
+        font-size: 3rem;
+        left: 25px;
+     }
+     .imagen-inicio {
+         object-fit: center;
+         height: 70vh;
+     }
+}
