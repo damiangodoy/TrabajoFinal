@@ -5,7 +5,6 @@
           box-sizing: border-box;
 }
 
-/* Reset */
 /* Header */
 header {
   display: -webkit-box;
@@ -27,9 +26,27 @@ header .logo-header {
   margin: 5px;
 }
 
+header .texto-nav {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+header .navbar {
+  display: block;
+}
+
+header .navbar-light .navbar-nav .nav-link.active {
+  color: #F15A24;
+}
+
 header .boton-header {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
   background-color: black;
-  margin-right: 15px;
+  margin-left: 15px;
 }
 
 header .boton-header .btn {
@@ -41,49 +58,27 @@ header .boton-header .btn {
 }
 
 /* Footer */
-footer ul {
+footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 0;
 }
 
-footer ul img {
+footer nav ul img {
   height: 30px;
   width: 30px;
   margin: 5px;
 }
 
-.slide-right {
-  -webkit-animation: slide-right 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-right 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-}
-
-@keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
+/* MEDIA QUERIE */
+@media screen and (max-width: 768px) {
+  header {
+    display: block;
   }
 }
 
@@ -103,6 +98,7 @@ footer ul img {
   left: 50px;
 }
 
+/* MEDIA QUERIE */
 @media screen and (max-width: 768px) {
   .titulo-inicio {
     font-size: 3rem;
@@ -167,6 +163,7 @@ footer ul img {
   text-align: justify;
 }
 
+/* MEDIA QUERIE */
 @media screen and (max-width: 768px) {
   .imagen-actividades {
     -o-object-fit: center;
@@ -195,6 +192,7 @@ footer ul img {
   }
 }
 
+/* MEDIA QUERIE */
 @media screen and (max-width: 768px) {
   .imagen-staff {
     -o-object-position: center;
@@ -203,8 +201,8 @@ footer ul img {
   }
 }
 
-.boton, header .boton-header, .boton-enviar, .boton-borrar {
-  width: 150px;
+.boton, .boton-enviar, .boton-borrar {
+  width: 100px;
   height: 40px;
   border-radius: 20px;
   color: white;
@@ -222,6 +220,12 @@ footer ul img {
 
 .form-control {
   width: 80%;
+}
+
+@media screen and (max-width: 425px) {
+  .boton-enviar {
+    margin-top: 15px;
+  }
 }
 
 h1 {
@@ -272,9 +276,11 @@ h4 {
 }
 
 p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: Medium;
   text-align: center;
   color: grey;
-  font-size: 12px;
+  font-size: 14px;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-name: aparece-imagen;

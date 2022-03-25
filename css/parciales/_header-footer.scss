@@ -8,12 +8,26 @@ header {
     .logo-header {
         height: 100px;
         overflow: hidden;
-        margin: 5px; 
+        margin: 5px;
+    }
+    .texto-nav {
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold;
+    }
+    .navbar {
+      display: block;
+    }
+    .navbar-light .navbar-nav .nav-link.active {
+      color: $naranjalogo;
     }
     .boton-header {
-      @extend .boton;
+      width: 150px;
+      height: 40px;
+      border-radius: 20px;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
       background-color: black;
-      margin-right: 15px;
+      margin-left: 15px;
       .btn {
         color: white;
         justify-content: center;
@@ -25,42 +39,25 @@ header {
 /* Footer */
 
 footer {
+  nav {
     ul {
-        display: flex;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        img {
-            height: 30px;
-            width: 30px;
-            margin: 5px;
-        } 
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      padding-left: 0;
+      img{
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+      }
     }
+  }
 } 
 
-.slide-right {
-	-webkit-animation: slide-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+/* MEDIA QUERIE */
 
-@-webkit-keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-    }
-  }
-  @keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-    }
-  }
-  
+  @media screen and (max-width: 768px) {
+    header {
+       display: block; 
+     }
+}

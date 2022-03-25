@@ -1,5 +1,5 @@
 .boton {
-    width: 150px;
+    width: 100px;
     height: 40px;
     border-radius: 20px;
     color: white;
@@ -18,4 +18,10 @@
 
 .form-control {
     width: 80%;
+}
+
+@media screen and (max-width: 425px) {
+    .boton-enviar {
+        margin-top: 15px;
+    }
 }
